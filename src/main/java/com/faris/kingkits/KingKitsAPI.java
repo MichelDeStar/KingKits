@@ -38,7 +38,7 @@ public class KingKitsAPI {
 	public static String getKit(final Player player) {
 		if (player == null) return null;
 		KitPlayer kitPlayer = PlayerController.getInstance().getPlayer(player);
-		return kitPlayer != null && kitPlayer.hasKit() ? kitPlayer.getKit().getName() : null;
+		return kitPlayer != null && kitPlayer.hasKit() ? kitPlayer.getKit().getName() : "§cNo";
 	}
 
 	/**
